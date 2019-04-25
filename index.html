@@ -29,21 +29,21 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url({{ url_for('static', filename='images/header.jpg') }});
+    background-image: url('/static/images/header.jpg');
     filter: blur(2px) brightness(90%);
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url({{ url_for('static', filename="images/block01.png") }});
+    background-image: url('/static/images/block01.png');
     min-height: 100%;
     opacity : 0.1;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url({{ url_for('static', filename="images/line02.png") }});
+    background-image: url('/static/images/line02.png');
     background-size:100% 80%;
     opacity : 0.1;
 }
@@ -250,7 +250,7 @@ tr:nth-child(even) {
     </div>
     <div class="w3-center w3-padding-16">
       <a href="#register">
-      <img src="{{ url_for('static', filename='images/register_v2.png') }}" class="w3-regis-btn small modal">
+      <img src="/static/images/register_v2.png" class="w3-regis-btn small modal">
       </a>
     </div>
   </div>
@@ -265,14 +265,14 @@ tr:nth-child(even) {
   <div class="w3-row w3-section">
     <div class="w3-col" style="width:4%">&nbsp;</div>
     <div class="w3-col w3-container" style="width:92%;position: relative;">
-        <div class="w3-img small modal" style="position:absolute;left:0;top:0;background-image: url({{ url_for('static', filename='images/block_left_03.png') }});background-size:100% 100%;opacity:0.1;"></div>
+        <div class="w3-img small modal" style="position:absolute;left:0;top:0;background-image: url('/static/images/block_left_03.png');background-size:100% 100%;opacity:0.1;"></div>
         <div class="w3-padding-side modal small" style="position: relative;">
         <span style="line-height:25px;text-align:justify;text-justify:inter-ideograph;">
         <p>2015年10月因著因緣際會，日本聲學會(Acoustical Society of Japan) 之心理與生理聲學研究群首度將每月經常研討會移到海外舉辦，地點為台灣新竹清華大學。承辦單位因而命名為「第一屆」台日心理、生理、與電聲聲學交流研討會。 2019年起，承蒙科技部與日本科學技術機構(Japan Science and Technology Agency, JST) 支持，我們將連續三年繼續辦理此項交流研討會，並且聚焦與心理與生理聲學（Psychological and Physiological Acoustics），敬請各方前輩與潛力新秀鼓勵與支持！</p>
         <p>本年度的主題是 "Inclusive Sound Design", 我們很榮幸邀請到日方9名傑出且有趣的研究者來訪，台灣方面也有由醫師與教授組成的堅實群組對應。希望本次交流能在從不同的角度探討聽力障礙、語音、音樂感知、與音訊處理，奠定台日兩地的合作關係。</p>
         </span>
       </div>
-      <div class="w3-img small modal" style="position:absolute;right:0;bottom:0;background-image: url({{ url_for('static', filename='images/block_right_03.png') }});background-size:100% 100%;opacity:0.1;"></div>
+      <div class="w3-img small modal" style="position:absolute;right:0;bottom:0;background-image: url('/static/images/block_right_03.png');background-size:100% 100%;opacity:0.1;"></div>
     </div>
     <div class="w3-col" style="width:4%">&nbsp;</div>
   </div>
@@ -286,7 +286,7 @@ tr:nth-child(even) {
   <!-- Container (Professor) -->
   <div class="w3-row w3-section">
     <div class="w3-col m3 w3-container" style="padding-left:30px;">
-      <img src="{{ url_for('static', filename='images/hiraga02.jpg') }}" class="w3-image w3-round" style="width:100%">
+      <img src="/static/images/hiraga02.jpg" class="w3-image w3-round" style="width:100%">
     </div>
     <div class="w3-col m9 w3-container" style="padding-left:50px;padding-right:50px;padding-top:20px">
       <h3><b>Rumi HIRAGA</b></h3>
@@ -297,14 +297,14 @@ tr:nth-child(even) {
       Topic: Music for deaf and hard-of-hearing persons</p>
     </div>
     <div class="w3-col w3-container" style="width:100%;position: relative;margin:10px 0px">
-        <div class="w3-img-2 small modal" style="position:absolute;left:0;top:0;background-image: url({{ url_for('static', filename='images/line_left_02.png') }});background-size:100% 100%;opacity:0.1;"></div>
+        <div class="w3-img-2 small modal" style="position:absolute;left:0;top:0;background-image: url('/static/images/line_left_02.png');background-size:100% 100%;opacity:0.1;"></div>
         <div class="w3-padding-side-2 small modal" style="position: relative;">
         <span style="line-height:25px;text-align:justify;text-justify:inter-ideograph;">
         <p>Dr. Hiraga is a professor of Tsukuba University of Technology, where she teaches deaf and hard of hearing (DHH) students, following seven years of service at Bunkyo University. Prior to the academic job, she received Ph.D (Engineering) and started the research on music for DHH persons during her maternity and parental leave. Before that she was with IBM Tokyo Research including a year’s stay at Almaden Research Center. Her current interest is the improvement of hearing ability of DHH persons especially at music-listening by novel training using music games. She also leads a project of information support for DHH and visually handicapped persons at sport-watching. 
         <span><a target="_blank" rel="noopener noreferrer" href="http://rhiraga.info/">rhiraga.info</a></span>
         </p></span>
         </div>
-      <div class="w3-img-2 small modal" style="position:absolute;right:0;bottom:0;background-image: url({{ url_for('static', filename='images/line_right_02.png') }});background-size:100% 100%;opacity:0.1;"></div>
+      <div class="w3-img-2 small modal" style="position:absolute;right:0;bottom:0;background-image: url('/static/images/line_right_02.png');background-size:100% 100%;opacity:0.1;"></div>
     </div>
   </div>
 </div>
@@ -547,35 +547,35 @@ tr:nth-child(even) {
     <div class="w3-table-cell small modal">
       <div>
         <a target="_blank" rel="noopener noreferrer" href="https://www.most.gov.tw/?l=de">
-        <img src="{{ url_for('static', filename='images/MOST.png') }}" style="width:100%" class="w3-hover-opacity" alt="Publications">  
+        <img src="/static/images/MOST.png" style="width:100%" class="w3-hover-opacity" alt="Publications">  
         </a>
       </div>
     </div>
     <div class="w3-table-cell small modal">
       <div>
         <a target="_blank" rel="noopener noreferrer" href="https://www.jst.go.jp/EN/">
-        <img src="{{ url_for('static', filename='images/JST.png') }}" style="width:100%" class="w3-hover-opacity" alt="Publications">  
+        <img src="/static/images/JST.png" style="width:100%" class="w3-hover-opacity" alt="Publications">  
         </a>
       </div>
     </div>
     <div class="w3-table-cell small modal">
       <div>
         <a target="_blank" rel="noopener noreferrer" href="http://www.nthu.edu.tw/">
-        <img src="{{ url_for('static', filename='images/NTHU.gif') }}" style="width:100%" class="w3-hover-opacity" alt="Publications">  
+        <img src="/static/images/NTHU.gif" style="width:100%" class="w3-hover-opacity" alt="Publications">  
         </a>
       </div>
     </div>
     <div class="w3-table-cell small modal">
       <div>
         <a target="_blank" rel="noopener noreferrer" href="https://web.ym.edu.tw/bin/home.php">
-        <img src="{{ url_for('static', filename='images/NYMU.png') }}" style="width:100%" class="w3-hover-opacity" alt="Publications">  
+        <img src="/static/images/NYMU.png" style="width:100%" class="w3-hover-opacity" alt="Publications">  
         </a>
       </div>
     </div>
     <div class="w3-table-cell small modal">
       <div>
         <a target="_blank" rel="noopener noreferrer" href="http://www.mmc.edu.tw/">
-        <img src="{{ url_for('static', filename='images/MMC.png') }}" style="width:100%" class="w3-hover-opacity" alt="Publications">  
+        <img src="/static/images/MMC.png" style="width:100%" class="w3-hover-opacity" alt="Publications">  
         </a>
       </div>
     </div>
