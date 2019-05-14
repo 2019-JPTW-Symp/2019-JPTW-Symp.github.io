@@ -496,7 +496,15 @@ tr:nth-child(even) {
   <br>
   <h5><b>Lecture Theater, 1F, Research Building, National Yang Ming University, Taipei</b><br>
   No. 155, Sec. 2, Linong St., Beitou Dist., Taipei City 112, Taiwan (R.O.C.)</h5>
-  <h5><b>國立陽明大學研究大樓一樓階梯教室</b> &nbsp; (112台北市北投區立農街二段155號)</h5>
+  <div class="w3-col m8">
+    <span style="font-size: 18px;"><b>國立陽明大學研究大樓一樓階梯教室</b> &nbsp; (112台北市北投區立農街二段155號)</span>
+  </div>
+  <div class="w3-col m4" style="text-align:right;">
+  <form method="get" action="/static/YMU_trans.pdf" target="_blank" rel="noopener noreferrer">
+    <button id="btn_trans" type="submit" style="font-size:18px;background:none;border:none;color:#5b9bd5;" onclick="onClickFunction()"><u>Traffic Information 交通資訊</u></button>
+  </form>
+  </div>
+  <br>
   <br>
   <div style="width:100%;height:400px;">
     <iframe style="position: relative; height: 100%; width: 100%;"frameborder="0" style="border:0" 
@@ -640,7 +648,10 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
+function onClickFunction() {
+  var text = document.getElementById("btn_trans");
+  text.style.color = '#990099';
+}
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
