@@ -319,6 +319,11 @@ tr:nth-child(even) {
 <!-- Container (Program) -->
 <div class="w3-content w3-container w3-padding-64" id="program" style="width:100%">
   <h2 class="w3-center">PROGRAM</h2>
+  <div style="text-align:right;">
+  <form method="get" action="/static/2019 JP-TW Symposium_Speakers.pdf" target="_blank" rel="noopener noreferrer">
+    <button id="btn_info" type="submit" style="font-size:18px;background:none;border:none;color:#5b9bd5;" onclick="onClickFunction()"><u>Abstract & Shortbio 講者資訊</u></button>
+  </form>
+  </div>
   <br>
   <div class="w3-center w3-table-white">
     <table>
@@ -500,8 +505,8 @@ tr:nth-child(even) {
     <span style="font-size: 18px;"><b>國立陽明大學研究大樓一樓階梯教室</b> &nbsp; (112台北市北投區立農街二段155號)</span>
   </div>
   <div class="w3-col m4" style="text-align:right;">
-  <form method="get" action="/static/YMU_trans.pdf" target="_blank" rel="noopener noreferrer">
-    <button id="btn_trans" type="submit" style="font-size:18px;background:none;border:none;color:#5b9bd5;" onclick="onClickFunction()"><u>Traffic Information 交通資訊</u></button>
+  <form method="get" action="/static/2019 JP-TW Symposium_Transportation.pdf" target="_blank" rel="noopener noreferrer">
+    <button id="btn_info" type="submit" style="font-size:18px;background:none;border:none;color:#5b9bd5;" onclick="onClickFunction()"><u>Traffic Information 交通資訊</u></button>
   </form>
   </div>
   <br>
@@ -649,7 +654,7 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 function onClickFunction() {
-  var text = document.getElementById("btn_trans");
+  var text = document.getElementById("btn_info");
   text.style.color = '#990099';
 }
 // Change style of navbar on scroll
